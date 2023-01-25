@@ -11,7 +11,7 @@ const Search = () => {
     if (user) {
       searchGithubUser(user)
     }
-    console.log(user);
+    // console.log(user);
   }
   return <section className='section'>
     <Wrapper className='section-center'>

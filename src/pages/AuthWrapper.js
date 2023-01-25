@@ -3,8 +3,8 @@ import { useAuth0 } from '@auth0/auth0-react';
 import loadingGif from '../images/preloader.gif';
 import styled from 'styled-components';
 function AuthWrapper({ children }) {
-  const [isLoading, error] = useAuth0()
-  console.log(isLoading);
+  const { isLoading, error } = useAuth0()
+  // console.log(isLoading);
   if (isLoading) {
     return (
       <Wrapper>
